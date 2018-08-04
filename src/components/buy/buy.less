@@ -1,0 +1,92 @@
+.app-buy {
+	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	display: none;
+	.buy-content {
+		position: absolute;
+		width: 600px;
+		top: 50%;
+		left: 50%;
+		margin: -200px -300px;
+		background: #fff;
+	}
+	.buy-header {
+		background: #337ab7;
+		height: 30px;
+		color: #fff;
+		padding: 0 10px;
+		h3 {
+			font-size: 14px;
+			margin: 0;
+			line-height: 30px;
+		}
+		.buy-close {
+			float: right;
+			line-height: 30px;
+			cursor: pointer;
+		}
+	}
+	.buy-body {
+		padding: 40px 20px 30px;
+		.buy-info {
+			overflow: hidden;
+			img {
+				height: 67.5px;
+				width: 120px;
+				float: left;
+			}
+			h2, p {
+				margin: 0 0 0 140px;
+			}
+			h2 {
+				margin-bottom: 10px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+		.buy-price {
+			margin-top: 25px;
+			font-size: 16px;
+			.buy-price-content {
+				color: #f30;
+				font-size: 18px;
+				margin-left: 10px;
+				strong {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+	.buy-footer {
+		padding: 0 20px 20px;
+		p {
+			input {
+				margin-right: 5px;
+				position: relative;
+				top: 2px;
+			}
+		}
+		.buy-btn-cancel,
+		.buy-btn-choose {
+			float: right;
+			padding: 8px 10px;
+			font-size: 14px;
+			border: 1px solid #ccc;
+			color: #666;
+			background: #fff;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		.buy-btn-choose {
+			background: #337ab7;
+			color: #fff;
+			margin-right: 20px;
+		}
+	}
+}

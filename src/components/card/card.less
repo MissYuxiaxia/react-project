@@ -1,0 +1,87 @@
+.app-card {
+	width: 212px;
+	background: #fff;
+	overflow: hidden;
+	border-radius: 10px;
+	.img-container {
+		position: relative;
+		overflow: hidden;
+	}
+	.img-container, 
+	img {
+		width: 212px;
+		height: 119.25px;
+	}
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: all 400ms;
+	}
+	.content {
+		position: relative;
+		margin-right: 0;
+		.layer {
+			display: block;
+		}
+		h2 {
+			font-size: 16px;
+			text-align: center;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			margin: 0;
+			padding: 15px 10px 10px; 
+		}
+		p {
+			margin: 0;
+			padding: 0 6px 10px;
+			font-size: 12px;
+			color: #666;
+			.price {
+				color: #f30;
+				margin-right: 4px;
+			}
+		}
+		.price, 
+		.level {
+			float: right;
+		}
+		.layer {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.6);
+			text-align: center;
+			padding-top: 15px;
+			opacity: 0;
+			transition: all 400ms;
+		}
+		.buy-btn {
+			padding: 8px 15px;
+			color: #fff;
+			background: #5cb85c;
+			border-radius: 4px;
+			font-size: 14px;
+			display: inline-block;
+			cursor: pointer;
+		}
+		.has-buy {
+			background: #efefef;
+			color: #333;
+		}
+	}
+	&:hover {
+		.layer {
+			opacity: 1;
+		}
+		img {
+			width: 252px;
+			height: 159.25px;
+			top: -20px;
+			left: -20px;
+		}
+	}
+}
